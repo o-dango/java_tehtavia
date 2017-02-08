@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movietheatre.theatreGUIController">
+   <children>
+      <Label layoutX="14.0" layoutY="63.0" prefHeight="18.0" prefWidth="189.0" text="Valitse teatteri:" />
+      <TextField fx:id="startTime" layoutX="12.0" layoutY="144.0" prefHeight="28.0" prefWidth="189.0" promptText="hh:mm" />
+      <TextField fx:id="endTime" layoutX="233.0" layoutY="144.0" prefHeight="28.0" prefWidth="189.0" promptText="hh:mm" />
+      <Button fx:id="listMovies" layoutX="169.0" layoutY="180.0" mnemonicParsing="false" onAction="#listMoviesAction" text="Listaa elokuvat" />
+      <Button fx:id="searchName" layoutX="385.0" layoutY="222.0" mnemonicParsing="false" onAction="#searchMovieAction" prefHeight="28.0" prefWidth="59.0" text="Hae" />
+      <TextField fx:id="nameMovie" layoutX="173.0" layoutY="222.0" prefHeight="28.0" prefWidth="212.0" />
+      <DatePicker fx:id="pickDate" layoutX="233.0" layoutY="86.0" onAction="#getDateAction" promptText="Päivämäärä" />
+      <ImageView fx:id="prettyPic" fitHeight="95.0" fitWidth="441.0" layoutX="7.0" layoutY="464.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../osu!/Skins/Jantsiv6/menu-button-background.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="14.0" prefHeight="52.0" prefWidth="212.0" text="Finnkinon elokuvat" textFill="#b27a02">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="114.0" prefHeight="28.0" prefWidth="189.0" text="Alkamisväli:" />
+      <Label layoutX="12.0" layoutY="222.0" prefHeight="28.0" prefWidth="178.0" text="Tai hae elokuvan nimellä:" />
+      <ComboBox fx:id="chooseTheatre" layoutX="12.0" layoutY="86.0" onAction="#getTheatreAction" prefHeight="28.0" prefWidth="189.0" promptText="––" />
+      <ListView fx:id="showLabel" layoutX="8.0" layoutY="256.0" prefHeight="208.0" prefWidth="441.0" />
+   </children>
+</AnchorPane>

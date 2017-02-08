@@ -1,0 +1,6 @@
+Pepsi Max;Pepsi;0.5;1.8
+Pepsi Max;Pepsi;1.5;2.2
+Coca-Cola Zero;Coca-Cola;0.5;2.0
+Coca-Cola Zero;Coca-Cola;1.5;2.5
+Fanta Zero;Coca-Cola;0.5;1.95
+Fanta Zero;Coca-Cola;1.5;2.45
